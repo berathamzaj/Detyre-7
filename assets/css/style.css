@@ -1,0 +1,251 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 1050px;
+    margin: 0px auto;
+    
+    
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color:#2f476d;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 20px;
+    line-height: 100px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.blog {
+    height: 400px;
+    margin: 10px 0px 8px 0px;
+    background-color:rgba(240, 240, 240, 255)
+}
+
+
+
+.bex {
+    margin: 0px auto;
+    padding: 100px 150px;
+}
+
+.bex p {
+    line-height: 22px;
+}
+
+.red {
+    background-color:red
+}
+
+.green {
+    background-color:green
+}
+
+.red, .green {
+    border: none;
+    padding: 8px 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cl {
+    height: 310px;
+    width: 340px;
+    border: 1px solid rgb(235, 230, 230);
+    margin-bottom: 10px;
+}
+
+.lc, .cl-lc {
+    margin: 5px;
+}
+
+.lc {
+    width: 300px;
+    padding-bottom: 5px;
+}
+
+.cl img {
+    width: 100%;
+}
+
+.cl-lc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-height {
+    margin: 50px;
+}
+
+footer {
+
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    width: 550px;
+}
+
+nav ul li:hover {
+    background-color: rgb(17, 35, 58);
+    transition: 2s;
+    
+}
+
+img:hover {
+    opacity: .6;
+    transition: 1s;
+    background-color: rgb(197, 187, 187);
+}
+
+/* Media Queries*/
+
+@media all and (max-width: 768px) {
+
+    .container { width: 100%;}
+
+    header {
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo img { margin: 0px auto;}
+
+    nav ul { 
+        margin: 8px; 
+        padding: 0px;
+    }
+
+    nav ul li a {
+        margin: 0px 18px;
+        line-height: 0px;
+    }
+
+    .cl {
+        height: auto;
+        width: 450px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .bex  {
+        margin: 0px auto;
+        padding: 50px 40px;
+    }
+
+    .red,
+    .green {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    footer { display: inline;}
+
+    footer p { width: auto;}
+
+    footer span {
+        display: block;
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+@media all and (max-width: 499px) {
+
+    .container { min-width: 450px;}
+
+    nav ul { 
+        margin: 8px; 
+        padding: 0px;
+    }
+
+    nav ul li a {
+        margin: 0px 10px;
+        line-height: 0px;
+    }
+
+    .cl {
+        height: auto;
+        width: 380px;
+        margin: 15px 0px 15px 0px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .container {
+
+        min-width: 350px;
+    }
+
+    nav ul { 
+        margin: 8px; 
+        padding: 0px;
+    }
+
+    nav ul li a {
+        margin: 0px 5px;
+        line-height: 0px;
+    }
+
+    .cl {
+        height: auto;
+        width: 280px;
+        margin: 15px 0px 15px 0px;
+    }
+
+}
